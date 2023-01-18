@@ -23,6 +23,17 @@ Mean Well power supply:
         alt="Picture of Mean Well power supply" 
         width=300 />
 </a>
+<br><br>
+
+Byers telescope original power supply:
+
+<a href="img/scope_pictures/2023-01-18_13.23.50.jpg">
+    <img src="img/scope_pictures/2023-01-18_13.23.50.jpg" 
+        alt="Picture of Mean Well power supply" 
+        width=300 />
+</a>
+
+
 
 ## Equatorial gear stepper motor driver board
 
@@ -44,3 +55,6 @@ It is accessed through this panel with a 9/64" allen key:
         width=300 />
 </a>
 
+## Panels and display
+
+None of the panels, switches, external device connectors, or the display is hooked up in this state.
