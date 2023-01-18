@@ -14,4 +14,4 @@ Located in: [/Documentation/](Documentation)
 
 ### System overviews
 
-[2023-01-18](/Documentation/System%20Overviews/2023-01-18/) - Overview of the system state as it was from 2018 to 2023
+* [2023-01-18](/Documentation/System%20Overviews/2023-01-18/) - Overview of the system state as it was from 2018 to 2023
