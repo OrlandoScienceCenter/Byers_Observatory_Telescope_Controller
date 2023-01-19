@@ -58,3 +58,12 @@ It is accessed through this panel with a 9/64" allen key:
 ## Panels and display
 
 None of the panels, switches, external device connectors, or the display is hooked up in this state.
+
+## Misc
+
+I believe these are the stepper driver board input pins, but they should be verified:
+
+4 - Step clock input to board/5v to step
+8 - 5vcd power
+27 - GND
+6 - Direction input (Should be tied to GND, if open, direction will be reversed)
