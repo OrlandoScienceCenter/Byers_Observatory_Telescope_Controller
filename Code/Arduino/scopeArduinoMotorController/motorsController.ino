@@ -8,8 +8,8 @@ void stepMotorsOnce(TrackingRateMode currentTrackingRate)
   stepMotorOnPin(_pinEquatorialGearStepper);
   //stepMotorOnPin(_pinTrimStepper);
 
-  Serial.println(F("Delaying before next motor(s) steps for: " + currentTrackingRate + F(" tracking rate")));
-
+  serialDebugMotorDelayMessage(currentTrackingRate);
+   
   if (currentTrackingRate == SOLAR)
   {
     delayMicroseconds(_solarDelayMicros - (_stepperPinOnTimeMicros * numberOfMotors));
@@ -31,9 +31,27 @@ void stepMotorOnPin(int motorStepPin)
   digitalWrite(motorStepPin, HIGH);
   digitalWrite(_pinOnboardLed, HIGH);
 
-  Serial.println(F("Turned on motor step pin " + motorStepPin + " for: " + _stepperPinOnTimeMicros + F(" microseconds")));
+  serialDebugMotorOnMessage(motorStepPin);
+
   delayMicroseconds(_stepperPinOnTimeMicros);
   
   digitalWrite(motorStepPin, LOW);
   digitalWrite(_pinOnboardLed, LOW);
 }
+
+void serialDebugMotorOnMessage(int motorStepPin)
+{
+  Serial.print(F("Turned on motor step pin "));
+  Serial.print(motorStepPin);
+  Serial.print(F(" for: "));
+  Serial.print(_stepperPinOnTimeMicros);
+  Serial.println(F(" microseconds"));
+}
+
+void serialDebugMotorDelayMessage(TrackingRateMode currentTrackingRate)
+{
+  Serial.print(F("Delaying before next motor(s) steps for: "));
+  Serial.print(currentTrackingRate);
+  Serial.print(F(" tracking rate"));
+}
+
