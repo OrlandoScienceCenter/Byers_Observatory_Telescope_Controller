@@ -1,5 +1,5 @@
 // Delays:
-const int _solarDelayMicros = 9500;
+const int _solarDelayMicros = 9000;
 const int _lunarDelayMicros = 9300;
 const int _siderealDelayMicros = 8973;
 
