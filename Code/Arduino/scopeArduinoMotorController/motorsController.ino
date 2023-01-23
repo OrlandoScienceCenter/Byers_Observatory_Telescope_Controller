@@ -6,7 +6,7 @@ void stepMotorsOnce(TrackingRateMode currentTrackingRate)
   const int numberOfMotors = 1;
   
   stepMotorOnPin(_pinEquatorialGearStepper);
-  //stepMotorOnPin(_pinTrimStepper);
+  //stepMotorOnPin(_pinDeclinationStepper);
 
   serialDebugMotorDelayMessage(currentTrackingRate);
    
