@@ -23,9 +23,11 @@ void setup()
 {
   Serial.begin(115200);
   
+  Serial.println(F("Init begin."));
+
   initializeAllPins();
 
-  Serial.println("Init done");
+  Serial.println(F("Init done."));
 }
 
 void loop() 
@@ -43,8 +45,7 @@ void initializeAllPins()
   pinMode(_pinOnboardLed, OUTPUT);
   digitalWrite(_pinOnboardLed, LOW);
 
-  
-  pinMode(_pinTrackingModeSwitchSolar, INPUT_PULLUP);
-  
+  // Inputs:
+  pinMode(_pinTrackingModeSwitchSolar, INPUT_PULLUP);  
   pinMode(_pinTrackingModeSwitchLunar, INPUT_PULLUP);  
 }
