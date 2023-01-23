@@ -26,9 +26,11 @@ This will ultimately be the code that runs on the arduino
 
 | Arduino Pin                   | Connection                                                              |
 | ----------------------------- | ----------------------------------------------------------------------- |
-| D3                            | ARDUINO OUTPUT: Equatorial gear stepper pulse pin on stepper driver     |
 | 5V                            | 5V output from meanwell power supply in pedestal                        |
 | GND                           | GND output from meanwell power supply, GND on stepper driver            |
+|                               |                                                                         |
+| D3                            | ARDUINO OUTPUT: Equatorial gear stepper pulse pin on stepper driver     |
+| D5                            | ARDUINO OUTPUT: Trim stepper pulse pin. No details yet.                 |
 |                               |                                                                         |
 | D8                            | ARDUINO INPUT PULLUP: Pulled high, low when pedestal switch is on lunar |
 | D9                            | ARDUINO INPUT PULLUP: Pulled high, low when pedestal switch is on solar |

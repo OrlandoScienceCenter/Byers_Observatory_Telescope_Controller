@@ -7,6 +7,8 @@ const int _stepperPinOnTimeMicros = 5;
 
 // Pins:
 const int _pinEquatorialGearStepper = 3;
+const int _pinTrimStepper = 5;
+
 const int _pinTrackingModeSwitchLunar = 8;
 const int _pinTrackingModeSwitchSolar = 9;
 const int _pinOnboardLed = 13;
@@ -39,6 +41,9 @@ void loop()
 
 void initializeAllPins()
 {
+  pinMode(_pinTrimStepper, OUTPUT);
+  digitalWrite(_pinTrimStepper, LOW);
+
   pinMode(_pinEquatorialGearStepper, OUTPUT);
   digitalWrite(_pinEquatorialGearStepper, LOW);
 
