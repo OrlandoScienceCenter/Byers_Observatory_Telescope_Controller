@@ -1,6 +1,6 @@
 void stepMotorsOnce(TrackingRateMode currentTrackingRate)
 {
-  if (currentTrackingRate == UNINITIALIZED) return;
+    if (currentTrackingRate == UNINITIALIZED) return;
   
   // Otherwise:
   const int numberOfMotors = 1;
@@ -41,6 +41,8 @@ void stepMotorOnPin(int motorStepPin)
 
 void serialDebugMotorOnMessage(int motorStepPin)
 {
+  if (!_debugOn) return;
+
   Serial.print(F("Turned on motor step pin "));
   Serial.print(motorStepPin);
   Serial.print(F(" for: "));
@@ -49,7 +51,9 @@ void serialDebugMotorOnMessage(int motorStepPin)
 }
 
 void serialDebugMotorDelayMessage(TrackingRateMode currentTrackingRate)
-{
+{  
+  if (!_debugOn) return;
+  
   Serial.print(F("Delaying before next motor(s) steps for: "));
   Serial.print(currentTrackingRate);
   Serial.print(F(" tracking rate"));

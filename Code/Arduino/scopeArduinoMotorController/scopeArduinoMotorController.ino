@@ -5,12 +5,16 @@ const int _siderealDelayMicros = 8973;
 
 const int _stepperPinOnTimeMicros = 5;
 
+// Debug:
+const bool _debugOn = false;
+
 // Pins:
 const int _pinEquatorialGearStepper = 3;
 const int _pinDeclinationStepper = 5;
 
-const int _pinTrackingModeSwitchLunar = 8;
-const int _pinTrackingModeSwitchSolar = 9;
+const int _pinTrackingModeSwitchLunar = 9;
+const int _pinTrackingModeSwitchSolar = 8;
+
 const int _pinOnboardLed = 13;
 
 enum TrackingRateMode
@@ -36,6 +40,8 @@ void loop()
 {
   TrackingRateMode currentTrackingRate = checkTrackingRateSwitch();
 
+  debugSerialTrackingModeReadout(currentTrackingRate);
+
   stepMotorsOnce(currentTrackingRate);
 }
 
@@ -53,4 +59,12 @@ void initializeAllPins()
   // Inputs:
   pinMode(_pinTrackingModeSwitchSolar, INPUT_PULLUP);  
   pinMode(_pinTrackingModeSwitchLunar, INPUT_PULLUP);  
+}
+
+void debugSerialTrackingModeReadout(TrackingRateMode currentTrackingRate)
+{
+  if (!_debugOn) return;
+
+  Serial.print(F("Current tracking: "));  
+  Serial.println(currentTrackingRate);
 }

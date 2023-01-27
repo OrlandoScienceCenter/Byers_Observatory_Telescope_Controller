@@ -18,7 +18,9 @@ It is timed so that the constant stepping ends up tracking astronomical objects 
 
 # scopeArduinoMotorController
 
-This will ultimately be the code that runs on the arduino
+Make sure debug is turned off at the top of the main sketch, or the stepper motor will not step at the correct rate. 
+
+This will ultimately be the code that runs on the arduino.
 
 ### Current status: 
 * In progress as of 20203-01-23
