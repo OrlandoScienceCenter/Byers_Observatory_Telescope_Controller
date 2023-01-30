@@ -6,6 +6,14 @@
 
 * All chips inside are 5v nominal power, with ranges falling right around there
 
+## Board Research:
+
+Input pins:
+
+All pins for socket are given with 1 being far left, 4 being far right and paddle buttons should be facing the sky.
+
+Pin positions on board are given in direction using [2023-01-30_08.02.05.jpg](images/2023-01-30_08.02.05.jpg) as the reference
+
 ## ICs:
 
 ### SN74LS04N
