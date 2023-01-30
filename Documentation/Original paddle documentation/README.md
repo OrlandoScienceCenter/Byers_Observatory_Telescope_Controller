@@ -1,6 +1,6 @@
 # Original Byers Paddle Information
 
-* Photograph of interior PCB are in [/images](/images/)
+* Photograph of interior PCB are in [images/](images/)
 
 * IC Datasheets are in the datasheets folder
 
