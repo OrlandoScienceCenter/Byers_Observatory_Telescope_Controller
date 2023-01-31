@@ -23,6 +23,19 @@ Socket pinout:
 | South-East            | Socket_3     | GND               | Green                    |
 | South-West            | Socket_4     | 5v VCC IN         | Yellow                   |
 
+Top left pin of top button shorts to gnd when pressed
+Bottom left pin of top button shorts to gnd when pressed
+
+| Arduno Pro Mini (Inside Paddle) | Paddle Function                      | Wire color inside paddle  |
+| ------------------------------- | ------------------------------------ | ------------------------- |
+| Pin D2                          | Top Button (By reference photo)      | Yellow                    |
+| Pin D3                          | Right Button (By reference photo)    | Green                     |
+| Pin D4                          | Bottom Button (By reference photo)   | Blue                      |
+| Pin D5                          | Top Button (By reference photo)      | White                     |
+| Pin D6                          | Fast on Switch                       | Grey                      |
+| Pin D7                          | Slow on Switch                       | Grey                      |
+| GND                             | G on Switch                          | Grey                      |
+
 ## ICs:
 
 ### SN74LS04N
