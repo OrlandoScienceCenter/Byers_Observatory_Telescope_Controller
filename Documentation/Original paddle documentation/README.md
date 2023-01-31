@@ -32,9 +32,9 @@ Bottom left pin of top button shorts to gnd when pressed
 | Pin D3                          | Right Button (By reference photo)                | Green                     | Dec Up          |
 | Pin D4                          | Bottom Button (By reference photo)               | Blue                      | RA Right        |
 | Pin D5                          | Left Button (By reference photo)                 | White                     | Dec Down        |
-| Pin D6                          | Fast on Switch                                   | Grey                      | Faster          |
-| Pin D7                          | Slow on Switch                                   | Grey                      | Guider?         |
-| GND                             | G on Switch                                      | Grey                      | Slower          |
+| Pin D6                          | Slow on Switch                                   | Grey                      | Slower          |
+| Pin D7                          | Fast on Switch                                   | Grey                      | Faster          |
+| GND                             | G on Switch                                      | Grey                      | Guider?         |
 
 ## ICs:
 
